@@ -5,16 +5,12 @@ const Buttons = new MessageActionRow({
     components: [
         new MessageButton()
             .setStyle("LINK")
-            .setURL("https://github.com/Felix-44/Xilef")
+            .setURL("https://github.com/ashifolfi/Xilef")
             .setLabel("Github page"),
         new MessageButton()
             .setStyle("LINK")
             .setURL("https://discord.gg/Qyz5HgrxWg")
-            .setLabel("Official server"),
-        new MessageButton()
-            .setStyle("LINK")
-            .setURL("https://discord.com/api/oauth2/authorize?client_id=852882606629847050&permissions=275415091200&scope=bot")
-            .setLabel("Invite bot"),
+            .setLabel("Official server for regular Xilef"),
     ]
 });
 
@@ -98,16 +94,12 @@ module.exports = [
                 components: [
                     new MessageButton()
                         .setStyle("LINK")
-                        .setURL("https://github.com/Felix-44/Xilef")
+                        .setURL("https://github.com/ashifolfi/Xilef")
                         .setLabel("Github page"),
                     new MessageButton()
                         .setStyle("LINK")
                         .setURL("https://discord.gg/Qyz5HgrxWg")
-                        .setLabel("Official server"),
-                    new MessageButton()
-                        .setStyle("LINK")
-                        .setURL("https://discord.com/api/oauth2/authorize?client_id=852882606629847050&permissions=275415091200&scope=bot")
-                        .setLabel("Invite bot"),
+                        .setLabel("Official server for regular Xilef"),
                 ]
             });
             message.channel.send({
@@ -115,7 +107,7 @@ module.exports = [
                     new MessageEmbed()
                         .setColor("#0368f8")
                         .setTitle("Xilef info")
-                        .setDescription("Bot created by <@621307633718132746>\nYou can check out the code on github")
+                        .setDescription("Bot created by <@230072508504604672>\nYou can check out the code on github")
                         .addField("This server's prefix:", "`" + client.prefix + "`")
                         .setTimestamp()
                 ],

@@ -11,14 +11,11 @@ const client = new LocalClient(
         Intents.FLAGS.GUILD_MESSAGES,
         Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
     ]
-<<<<<<< HEAD
 )
 
 client.start(client.debugging ? process.env.DEBUG : process.env.TOKEN)
-=======
-})
-client.login(debugmode ? process.env.DEBUG : process.env.TOKEN)
-client.prefix = debugmode ? "beta&" : "&"
+/* client.login(debugmode ? process.env.DEBUG : process.env.TOKEN)
+client.prefix = debugmode ? "beta&" : "&" */
 
 Time = {
     day: 86400000,
@@ -206,4 +203,3 @@ client.on("messageCreate", (message) => {
     }
     handler(Object.assign(message, { content: message.content.slice(prefix.length) }))
 })
->>>>>>> master
