@@ -68,6 +68,7 @@ require("./parsers.js")
 require("./buttons.js")
 require("./minigames.js")
 require('./developer')
+require("./rolemenu.js")
 
 client.on("ready", (message) => {
     console.log("- Bot ready")
